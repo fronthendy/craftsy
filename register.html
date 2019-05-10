@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Craftsy | Cadastro</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Container pai -->
+      <header>
+        <!-- Cabeçalho -->
+        <nav class="main-nav">
+          <a href="index.html"
+            ><img class="logo" src="img/logo.png" alt="logo craftsy"
+          /></a>
+          <ul class="menu">
+            <li><a href="#">Smartphones</a></li>
+            <li><a href="#">Tablets</a></li>
+            <li><a href="#">Computadores</a></li>
+          </ul>
+          <ul class="menu access">
+            <li><a href="login.html">login</a></li>
+            <li><a href="register.html">registrar</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1 class="titulo-centralizado">Cadastro</h1>
+        <form class="form-cadastro">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Jane Doe">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="user@mail.com" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="senha segura" required>
+
+            <label for="pais">País</label>
+            <select name="pais" id="pais" required>
+              <option selected disabled>Selecione um país</option>
+              <option value="BR">Brasil</option>
+              <option value="ARG">Argentina</option>
+              <option value="EUA">Estados Unidos</option>
+            </select>
+
+            <fieldset>
+              <legend>Genero</legend>
+              <label for="feminino"><input type="radio" name="genero" id="feminino" value="feminino">Feminino</label>
+              <label for="masculino"><input type="radio" name="genero" id="masculino" value="masculino">Masculino</label>
+              <label for="naobinario"><input type="radio" name="genero" id="naobinario" value="naobinario">Não Binário</label>
+              <label for="na"><input type="radio" name="genero" id="na" value="na">N/A</label>
+            </fieldset>
+
+
+            <fieldset>
+              <legend>Hobbies</legend>
+              <label for="musica"><input type="checkbox" name="hobbies" id="musica" value="musica">Música</label>
+              <label for="xadrez"><input type="checkbox" name="hobbies" id="xadrez" value="xadrez">Xadrez</label>
+              <label for="drinks"><input type="checkbox" name="hobbies" id="drinks" value="drinks">drinks</label>
+              <label for="churras"><input type="checkbox" name="hobbies" id="churras" value="churras">churras</label>
+            </fieldset>
+
+            <label for="comentarios">Comentários</label>
+            <textarea name="comentarios" id="comentarios" maxlength="140"></textarea>
+
+            <button type="submit" name="cadastrar">Cadastrar</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
+<!--
+form registrar
+nome text
+email mail
+senha pass
+pais select
+genero radiobutton
+hobbies checkbox
+comentarios textarea -->
